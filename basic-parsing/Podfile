@@ -1,0 +1,4 @@
+platform :ios, :deployment_target => "5.0"
+xcodeproj 'CC12-Basic/CC12-Basic.xcodeproj'
+
+pod 'AFNetworking'

@@ -15,13 +15,20 @@
 		1F9BD40F15D6F44600B4D1FE /* IOVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD40E15D6F44600B4D1FE /* IOVAppDelegate.m */; };
 		1F9BD41215D6F44600B4D1FE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9BD41015D6F44600B4D1FE /* MainStoryboard.storyboard */; };
 		1F9BD41515D6F44600B4D1FE /* IOVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD41415D6F44600B4D1FE /* IOVViewController.m */; };
+		1F9BD42415DB1E0B00B4D1FE /* CC12-Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD42215DB1E0B00B4D1FE /* CC12-Model.xcdatamodeld */; };
+		1F9BD42F15DB297800B4D1FE /* _IOVTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD42815DB297800B4D1FE /* _IOVTweet.m */; };
+		1F9BD43015DB297800B4D1FE /* _IOVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD42A15DB297800B4D1FE /* _IOVUser.m */; };
+		1F9BD43115DB297800B4D1FE /* IOVTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD42C15DB297800B4D1FE /* IOVTweet.m */; };
+		1F9BD43215DB297800B4D1FE /* IOVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD42E15DB297800B4D1FE /* IOVUser.m */; };
+		1F9BD43415DB2CF700B4D1FE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9BD43315DB2CF700B4D1FE /* CoreData.framework */; };
+		F32AD36BE74145E389822329 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED77108C72074B9BA45CA73C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F9BD3FA15D6F44600B4D1FE /* CC12-Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC12-Basic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F9BD3FE15D6F44600B4D1FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1F9BD40015D6F44600B4D1FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1F9BD40215D6F44600B4D1FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F9BD3FE15D6F44600B4D1FE /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F9BD40015D6F44600B4D1FE /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F9BD40215D6F44600B4D1FE /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1F9BD40615D6F44600B4D1FE /* CC12-Basic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CC12-Basic-Info.plist"; sourceTree = "<group>"; };
 		1F9BD40815D6F44600B4D1FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F9BD40A15D6F44600B4D1FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -31,6 +38,18 @@
 		1F9BD41115D6F44600B4D1FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1F9BD41315D6F44600B4D1FE /* IOVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOVViewController.h; sourceTree = "<group>"; };
 		1F9BD41415D6F44600B4D1FE /* IOVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOVViewController.m; sourceTree = "<group>"; };
+		1F9BD42315DB1E0B00B4D1FE /* CC12-Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CC12-Model.xcdatamodel"; sourceTree = "<group>"; };
+		1F9BD42715DB297800B4D1FE /* _IOVTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _IOVTweet.h; sourceTree = "<group>"; };
+		1F9BD42815DB297800B4D1FE /* _IOVTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _IOVTweet.m; sourceTree = "<group>"; };
+		1F9BD42915DB297800B4D1FE /* _IOVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _IOVUser.h; sourceTree = "<group>"; };
+		1F9BD42A15DB297800B4D1FE /* _IOVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _IOVUser.m; sourceTree = "<group>"; };
+		1F9BD42B15DB297800B4D1FE /* IOVTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVTweet.h; sourceTree = "<group>"; };
+		1F9BD42C15DB297800B4D1FE /* IOVTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOVTweet.m; sourceTree = "<group>"; };
+		1F9BD42D15DB297800B4D1FE /* IOVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVUser.h; sourceTree = "<group>"; };
+		1F9BD42E15DB297800B4D1FE /* IOVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOVUser.m; sourceTree = "<group>"; };
+		1F9BD43315DB2CF700B4D1FE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		41DC497685BF41FE8D9C7D50 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		ED77108C72074B9BA45CA73C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9BD43415DB2CF700B4D1FE /* CoreData.framework in Frameworks */,
 				1F9BD3FF15D6F44600B4D1FE /* UIKit.framework in Frameworks */,
 				1F9BD40115D6F44600B4D1FE /* Foundation.framework in Frameworks */,
 				1F9BD40315D6F44600B4D1FE /* CoreGraphics.framework in Frameworks */,
+				F32AD36BE74145E389822329 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,9 +71,11 @@
 		1F9BD3EF15D6F44600B4D1FE = {
 			isa = PBXGroup;
 			children = (
+				1F9BD43315DB2CF700B4D1FE /* CoreData.framework */,
 				1F9BD40415D6F44600B4D1FE /* CC12-Basic */,
 				1F9BD3FD15D6F44600B4D1FE /* Frameworks */,
 				1F9BD3FB15D6F44600B4D1FE /* Products */,
+				41DC497685BF41FE8D9C7D50 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +93,7 @@
 				1F9BD3FE15D6F44600B4D1FE /* UIKit.framework */,
 				1F9BD40015D6F44600B4D1FE /* Foundation.framework */,
 				1F9BD40215D6F44600B4D1FE /* CoreGraphics.framework */,
+				ED77108C72074B9BA45CA73C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,12 +101,14 @@
 		1F9BD40415D6F44600B4D1FE /* CC12-Basic */ = {
 			isa = PBXGroup;
 			children = (
+				1F9BD42615DB297800B4D1FE /* Model */,
 				1F9BD40D15D6F44600B4D1FE /* IOVAppDelegate.h */,
 				1F9BD40E15D6F44600B4D1FE /* IOVAppDelegate.m */,
 				1F9BD41015D6F44600B4D1FE /* MainStoryboard.storyboard */,
 				1F9BD41315D6F44600B4D1FE /* IOVViewController.h */,
 				1F9BD41415D6F44600B4D1FE /* IOVViewController.m */,
 				1F9BD40515D6F44600B4D1FE /* Supporting Files */,
+				1F9BD42215DB1E0B00B4D1FE /* CC12-Model.xcdatamodeld */,
 			);
 			path = "CC12-Basic";
 			sourceTree = "<group>";
@@ -98,6 +124,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1F9BD42615DB297800B4D1FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BD42715DB297800B4D1FE /* _IOVTweet.h */,
+				1F9BD42815DB297800B4D1FE /* _IOVTweet.m */,
+				1F9BD42915DB297800B4D1FE /* _IOVUser.h */,
+				1F9BD42A15DB297800B4D1FE /* _IOVUser.m */,
+				1F9BD42B15DB297800B4D1FE /* IOVTweet.h */,
+				1F9BD42C15DB297800B4D1FE /* IOVTweet.m */,
+				1F9BD42D15DB297800B4D1FE /* IOVUser.h */,
+				1F9BD42E15DB297800B4D1FE /* IOVUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +149,7 @@
 				1F9BD3F615D6F44600B4D1FE /* Sources */,
 				1F9BD3F715D6F44600B4D1FE /* Frameworks */,
 				1F9BD3F815D6F44600B4D1FE /* Resources */,
+				43880DAFC26545C6A53A00D1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +199,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43880DAFC26545C6A53A00D1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F9BD3F615D6F44600B4D1FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -165,6 +224,11 @@
 				1F9BD40B15D6F44600B4D1FE /* main.m in Sources */,
 				1F9BD40F15D6F44600B4D1FE /* IOVAppDelegate.m in Sources */,
 				1F9BD41515D6F44600B4D1FE /* IOVViewController.m in Sources */,
+				1F9BD42415DB1E0B00B4D1FE /* CC12-Model.xcdatamodeld in Sources */,
+				1F9BD42F15DB297800B4D1FE /* _IOVTweet.m in Sources */,
+				1F9BD43015DB297800B4D1FE /* _IOVUser.m in Sources */,
+				1F9BD43115DB297800B4D1FE /* IOVTweet.m in Sources */,
+				1F9BD43215DB297800B4D1FE /* IOVUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +307,7 @@
 		};
 		1F9BD41915D6F44600B4D1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41DC497685BF41FE8D9C7D50 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CC12-Basic/CC12-Basic-Prefix.pch";
@@ -254,6 +319,7 @@
 		};
 		1F9BD41A15D6F44600B4D1FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41DC497685BF41FE8D9C7D50 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CC12-Basic/CC12-Basic-Prefix.pch";
@@ -282,8 +348,22 @@
 				1F9BD41A15D6F44600B4D1FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F9BD42215DB1E0B00B4D1FE /* CC12-Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F9BD42315DB1E0B00B4D1FE /* CC12-Model.xcdatamodel */,
+			);
+			currentVersion = 1F9BD42315DB1E0B00B4D1FE /* CC12-Model.xcdatamodel */;
+			path = "CC12-Model.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1F9BD3F115D6F44600B4D1FE /* Project object */;
 }
