@@ -68,16 +68,27 @@
 // If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
 - (NSManagedObjectContext *)managedObjectContext
 {
-    if (__managedObjectContext != nil) {
-        return __managedObjectContext;
+    if(!__managedObjectContext) {
+        __managedObjectContext = [self newManagedObjectContext];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleDidSaveNotification:) name:NSManagedObjectContextDidSaveNotification object:nil];
     }
+    
+    return __managedObjectContext;
+}
+
+-(void)handleDidSaveNotification:(NSNotification*)notif {
+    [self.managedObjectContext mergeChangesFromContextDidSaveNotification:notif];
+}
+
+-(NSManagedObjectContext*)newManagedObjectContext {
+    NSManagedObjectContext *context = nil;
     
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        __managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [__managedObjectContext setPersistentStoreCoordinator:coordinator];
+        context = [[NSManagedObjectContext alloc] init];
+        [context setPersistentStoreCoordinator:coordinator];
     }
-    return __managedObjectContext;
+    return context;
 }
 
 // Returns the managed object model for the application.
