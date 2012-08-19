@@ -21,6 +21,10 @@
 		1F9BD43115DB297800B4D1FE /* IOVTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD42C15DB297800B4D1FE /* IOVTweet.m */; };
 		1F9BD43215DB297800B4D1FE /* IOVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD42E15DB297800B4D1FE /* IOVUser.m */; };
 		1F9BD43415DB2CF700B4D1FE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9BD43315DB2CF700B4D1FE /* CoreData.framework */; };
+		1F9BD44415E012AD00B4D1FE /* IOVTweetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD44315E012AD00B4D1FE /* IOVTweetTableViewCell.m */; };
+		1F9BD44815E0221F00B4D1FE /* IOVTweetNetworkStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BD44715E0221F00B4D1FE /* IOVTweetNetworkStack.m */; };
+		1FFF61B815E149A600C7DD81 /* IOVTimelineHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF61B715E149A600C7DD81 /* IOVTimelineHandler.m */; };
+		1FFF61BB15E149C100C7DD81 /* IOVUserInfoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF61BA15E149C100C7DD81 /* IOVUserInfoHandler.m */; };
 		F32AD36BE74145E389822329 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED77108C72074B9BA45CA73C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,15 @@
 		1F9BD42D15DB297800B4D1FE /* IOVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVUser.h; sourceTree = "<group>"; };
 		1F9BD42E15DB297800B4D1FE /* IOVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOVUser.m; sourceTree = "<group>"; };
 		1F9BD43315DB2CF700B4D1FE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1F9BD44215E012AD00B4D1FE /* IOVTweetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVTweetTableViewCell.h; sourceTree = "<group>"; };
+		1F9BD44315E012AD00B4D1FE /* IOVTweetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOVTweetTableViewCell.m; sourceTree = "<group>"; };
+		1F9BD44515E01FBB00B4D1FE /* IOVConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOVConstants.h; sourceTree = "<group>"; };
+		1F9BD44615E0221F00B4D1FE /* IOVTweetNetworkStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVTweetNetworkStack.h; sourceTree = "<group>"; };
+		1F9BD44715E0221F00B4D1FE /* IOVTweetNetworkStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOVTweetNetworkStack.m; sourceTree = "<group>"; };
+		1FFF61B615E149A600C7DD81 /* IOVTimelineHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVTimelineHandler.h; sourceTree = "<group>"; };
+		1FFF61B715E149A600C7DD81 /* IOVTimelineHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOVTimelineHandler.m; sourceTree = "<group>"; };
+		1FFF61B915E149C100C7DD81 /* IOVUserInfoHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVUserInfoHandler.h; sourceTree = "<group>"; };
+		1FFF61BA15E149C100C7DD81 /* IOVUserInfoHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOVUserInfoHandler.m; sourceTree = "<group>"; };
 		41DC497685BF41FE8D9C7D50 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		ED77108C72074B9BA45CA73C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,7 +84,6 @@
 		1F9BD3EF15D6F44600B4D1FE = {
 			isa = PBXGroup;
 			children = (
-				1F9BD43315DB2CF700B4D1FE /* CoreData.framework */,
 				1F9BD40415D6F44600B4D1FE /* CC12-Basic */,
 				1F9BD3FD15D6F44600B4D1FE /* Frameworks */,
 				1F9BD3FB15D6F44600B4D1FE /* Products */,
@@ -90,6 +102,7 @@
 		1F9BD3FD15D6F44600B4D1FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F9BD43315DB2CF700B4D1FE /* CoreData.framework */,
 				1F9BD3FE15D6F44600B4D1FE /* UIKit.framework */,
 				1F9BD40015D6F44600B4D1FE /* Foundation.framework */,
 				1F9BD40215D6F44600B4D1FE /* CoreGraphics.framework */,
@@ -101,12 +114,19 @@
 		1F9BD40415D6F44600B4D1FE /* CC12-Basic */ = {
 			isa = PBXGroup;
 			children = (
+				1FFF61B915E149C100C7DD81 /* IOVUserInfoHandler.h */,
+				1FFF61BA15E149C100C7DD81 /* IOVUserInfoHandler.m */,
+				1FFF61B615E149A600C7DD81 /* IOVTimelineHandler.h */,
+				1FFF61B715E149A600C7DD81 /* IOVTimelineHandler.m */,
+				1F9BD44115E0128800B4D1FE /* Views */,
+				1F9BD43F15E0127600B4D1FE /* Controllers */,
 				1F9BD42615DB297800B4D1FE /* Model */,
 				1F9BD40D15D6F44600B4D1FE /* IOVAppDelegate.h */,
 				1F9BD40E15D6F44600B4D1FE /* IOVAppDelegate.m */,
 				1F9BD41015D6F44600B4D1FE /* MainStoryboard.storyboard */,
-				1F9BD41315D6F44600B4D1FE /* IOVViewController.h */,
-				1F9BD41415D6F44600B4D1FE /* IOVViewController.m */,
+				1F9BD44515E01FBB00B4D1FE /* IOVConstants.h */,
+				1F9BD44615E0221F00B4D1FE /* IOVTweetNetworkStack.h */,
+				1F9BD44715E0221F00B4D1FE /* IOVTweetNetworkStack.m */,
 				1F9BD40515D6F44600B4D1FE /* Supporting Files */,
 				1F9BD42215DB1E0B00B4D1FE /* CC12-Model.xcdatamodeld */,
 			);
@@ -137,6 +157,24 @@
 				1F9BD42E15DB297800B4D1FE /* IOVUser.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1F9BD43F15E0127600B4D1FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BD41315D6F44600B4D1FE /* IOVViewController.h */,
+				1F9BD41415D6F44600B4D1FE /* IOVViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1F9BD44115E0128800B4D1FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BD44215E012AD00B4D1FE /* IOVTweetTableViewCell.h */,
+				1F9BD44315E012AD00B4D1FE /* IOVTweetTableViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +267,10 @@
 				1F9BD43015DB297800B4D1FE /* _IOVUser.m in Sources */,
 				1F9BD43115DB297800B4D1FE /* IOVTweet.m in Sources */,
 				1F9BD43215DB297800B4D1FE /* IOVUser.m in Sources */,
+				1F9BD44415E012AD00B4D1FE /* IOVTweetTableViewCell.m in Sources */,
+				1F9BD44815E0221F00B4D1FE /* IOVTweetNetworkStack.m in Sources */,
+				1FFF61B815E149A600C7DD81 /* IOVTimelineHandler.m in Sources */,
+				1FFF61BB15E149C100C7DD81 /* IOVUserInfoHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

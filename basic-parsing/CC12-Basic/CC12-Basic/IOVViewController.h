@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface IOVViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
 
 @end
