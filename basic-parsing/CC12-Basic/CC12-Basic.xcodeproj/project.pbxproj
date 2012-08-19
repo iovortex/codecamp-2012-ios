@@ -29,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F59B6B215E14FEF008EA252 /* IOVJSONHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVJSONHandler.h; sourceTree = "<group>"; };
+		1F59B6B315E14FEF008EA252 /* IOVJSONHydrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOVJSONHydrator.h; sourceTree = "<group>"; };
 		1F9BD3FA15D6F44600B4D1FE /* CC12-Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC12-Basic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9BD3FE15D6F44600B4D1FE /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F9BD40015D6F44600B4D1FE /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +116,8 @@
 		1F9BD40415D6F44600B4D1FE /* CC12-Basic */ = {
 			isa = PBXGroup;
 			children = (
+				1F59B6B215E14FEF008EA252 /* IOVJSONHandler.h */,
+				1F59B6B315E14FEF008EA252 /* IOVJSONHydrator.h */,
 				1FFF61B915E149C100C7DD81 /* IOVUserInfoHandler.h */,
 				1FFF61BA15E149C100C7DD81 /* IOVUserInfoHandler.m */,
 				1FFF61B615E149A600C7DD81 /* IOVTimelineHandler.h */,

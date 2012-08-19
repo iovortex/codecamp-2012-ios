@@ -10,7 +10,7 @@
 
 @protocol IOVJSONHydrator <NSObject>
 
-+(id)objectFromJSON:(NSDictionary*)jsonDict withParameters:(NSDictionary*)paramsDict;
++(id)objectFromJSON:(NSDictionary*)jsonDict withParameters:(NSDictionary*) paramsDict andContext:(NSManagedObjectContext*)context;
 
 -(void)updateFromJSON:(NSDictionary*)jsonDict withParameters:(NSDictionary*)paramsDict;
 
