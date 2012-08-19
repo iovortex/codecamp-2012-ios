@@ -90,6 +90,11 @@ extern const struct IOVTweetFetchedProperties {
 
 
 
++ (NSArray*)fetchFetchRequest1:(NSManagedObjectContext*)moc_ tweetId:(NSNumber*)tweetId_ ;
++ (NSArray*)fetchFetchRequest1:(NSManagedObjectContext*)moc_ tweetId:(NSNumber*)tweetId_ error:(NSError**)error_;
+
+
+
 
 @end
 

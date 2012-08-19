@@ -47,8 +47,12 @@ extern const struct IOVUserFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSString* followersCount;
+@property (nonatomic, strong) NSNumber* followersCount;
 
+
+@property int32_t followersCountValue;
+- (int32_t)followersCountValue;
+- (void)setFollowersCountValue:(int32_t)value_;
 
 //- (BOOL)validateFollowersCount:(id*)value_ error:(NSError**)error_;
 
@@ -134,6 +138,11 @@ extern const struct IOVUserFetchedProperties {
 
 
 
++ (NSArray*)fetchFetchRequest:(NSManagedObjectContext*)moc_ userId:(NSNumber*)userId_ ;
++ (NSArray*)fetchFetchRequest:(NSManagedObjectContext*)moc_ userId:(NSNumber*)userId_ error:(NSError**)error_;
+
+
+
 
 @end
 
@@ -154,8 +163,11 @@ extern const struct IOVUserFetchedProperties {
 @interface _IOVUser (CoreDataGeneratedPrimitiveAccessors)
 
 
-- (NSString*)primitiveFollowersCount;
-- (void)setPrimitiveFollowersCount:(NSString*)value;
+- (NSNumber*)primitiveFollowersCount;
+- (void)setPrimitiveFollowersCount:(NSNumber*)value;
+
+- (int32_t)primitiveFollowersCountValue;
+- (void)setPrimitiveFollowersCountValue:(int32_t)value_;
 
 
 

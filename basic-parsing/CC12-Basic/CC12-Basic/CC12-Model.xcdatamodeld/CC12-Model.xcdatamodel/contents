@@ -9,7 +9,7 @@
         <relationship name="followers" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="IOVUser" inverseName="timeline" inverseEntity="IOVUser" syncable="YES"/>
     </entity>
     <entity name="IOVUser" representedClassName="IOVUser" syncable="YES">
-        <attribute name="followersCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="followersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="friendsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
@@ -20,8 +20,10 @@
         <relationship name="timeline" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IOVTweet" inverseName="followers" inverseEntity="IOVTweet" syncable="YES"/>
         <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IOVTweet" inverseName="author" inverseEntity="IOVTweet" syncable="YES"/>
     </entity>
+    <fetchRequest name="FetchRequest" entity="IOVUser" predicateString="userId == $userId"/>
+    <fetchRequest name="FetchRequest1" entity="IOVTweet" predicateString="id == $tweetId"/>
     <elements>
-        <element name="IOVUser" positionX="160" positionY="59" width="128" height="193"/>
         <element name="IOVTweet" positionX="477" positionY="144" width="128" height="133"/>
+        <element name="IOVUser" positionX="142" positionY="104" width="128" height="193"/>
     </elements>
 </model>

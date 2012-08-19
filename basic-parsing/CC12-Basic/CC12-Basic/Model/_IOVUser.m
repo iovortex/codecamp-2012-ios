@@ -48,6 +48,10 @@ const struct IOVUserFetchedProperties IOVUserFetchedProperties = {
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
+	if ([key isEqualToString:@"followersCountValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"followersCount"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+	}
 	if ([key isEqualToString:@"friendsCountValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"friendsCount"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
@@ -65,6 +69,25 @@ const struct IOVUserFetchedProperties IOVUserFetchedProperties = {
 
 @dynamic followersCount;
 
+
+
+- (int32_t)followersCountValue {
+	NSNumber *result = [self followersCount];
+	return [result intValue];
+}
+
+- (void)setFollowersCountValue:(int32_t)value_ {
+	[self setFollowersCount:[NSNumber numberWithInt:value_]];
+}
+
+- (int32_t)primitiveFollowersCountValue {
+	NSNumber *result = [self primitiveFollowersCount];
+	return [result intValue];
+}
+
+- (void)setPrimitiveFollowersCountValue:(int32_t)value_ {
+	[self setPrimitiveFollowersCount:[NSNumber numberWithInt:value_]];
+}
 
 
 
@@ -185,6 +208,41 @@ const struct IOVUserFetchedProperties IOVUserFetchedProperties = {
 
 
 
+
+
+
++ (NSArray*)fetchFetchRequest:(NSManagedObjectContext*)moc_ userId:(NSNumber*)userId_ {
+	NSError *error = nil;
+	NSArray *result = [self fetchFetchRequest:moc_ userId:userId_ error:&error];
+	if (error) {
+#if TARGET_OS_IPHONE
+		NSLog(@"error: %@", error);
+#else
+		[NSApp presentError:error];
+#endif
+	}
+	return result;
+}
++ (NSArray*)fetchFetchRequest:(NSManagedObjectContext*)moc_ userId:(NSNumber*)userId_ error:(NSError**)error_ {
+	NSParameterAssert(moc_);
+	NSError *error = nil;
+	
+	NSManagedObjectModel *model = [[moc_ persistentStoreCoordinator] managedObjectModel];
+	
+	NSDictionary *substitutionVariables = [NSDictionary dictionaryWithObjectsAndKeys:
+														
+														userId_, @"userId",
+														
+														nil];
+										
+	NSFetchRequest *fetchRequest = [model fetchRequestFromTemplateWithName:@"FetchRequest"
+													 substitutionVariables:substitutionVariables];
+	NSAssert(fetchRequest, @"Can't find fetch request named \"FetchRequest\".");
+	
+	NSArray *result = [moc_ executeFetchRequest:fetchRequest error:&error];
+	if (error_) *error_ = error;
+	return result;
+}
 
 
 
