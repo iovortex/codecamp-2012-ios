@@ -6,8 +6,12 @@
 //  Copyright (c) 2012 I/O Vortex. All rights reserved.
 //
 
-NSString * const kMainTimelineSequeId = @"showTimeline";
-NSString * const kMainUserInfoSequeId = @"showUserInfo";
-NSString * const kUserInfoTimelineSequeId = @"showCurrentUserTimeline";
-NSString * const kUserInfoTweetSequeId = @"showCurrentUserTweets";
-NSString * const kTweetUserInfoSequeId = @"showUserFromTweet";
+static NSString * const kMainTimelineSequeId = @"showTimeline";
+static NSString * const kMainUserInfoSequeId = @"showUserInfo";
+static NSString * const kUserInfoTimelineSequeId = @"showCurrentUserTimeline";
+static NSString * const kUserInfoTweetSequeId = @"showCurrentUserTweets";
+static NSString * const kTweetUserInfoSequeId = @"showUserFromTweet";
+
+static NSString * const kNotificationUpdatedUser = @"NotificationupdatedUser";
+
+static NSString * const kUserInfoUserName = @"UserInfoUserName";
